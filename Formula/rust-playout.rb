@@ -6,6 +6,16 @@ class RustPlayout < Formula
   sha256 "51d1b2b1b47547b9ed4ce60dbc3dc26dfa175a443b5832b66d5c567e69f971de"
   license "GPL-3.0-or-later"
 
+  bottle do
+    root_url "https://github.com/Thinkelution/rust-playout/releases/download/v0.0.1-alpha"
+    sha256 cellar: "/opt/homebrew/Cellar", arm64_tahoe: "eae9b0f536785c711b777ebdbdb9abf130b838e5590ed8d178e3b3db905a18c0"
+  end
+
+  pour_bottle? do
+    reason "This alpha binary requires FFmpeg 9"
+    satisfy { Formula["ffmpeg"].version.major == 9 }
+  end
+
   depends_on arch: :arm64
   depends_on :macos
   depends_on macos: :tahoe
