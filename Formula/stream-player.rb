@@ -1,7 +1,8 @@
 class StreamPlayer < Formula
   desc "Open-source M3U8/IPTV player with EPG support"
   homepage "https://github.com/Thinkelution/stream-player"
-  url "https://github.com/Thinkelution/stream-player/releases/download/v0.1.0/StreamPlayer-0.1.0-arm64.dmg"
+  url "https://github.com/Thinkelution/stream-player/releases/download/v0.1.0/StreamPlayer-0.1.0-arm64.dmg",
+      verified: "github.com/Thinkelution/stream-player"
   version "0.1.0"
   sha256 "6b6971bf55d11e33e802eaeca8423756d196eb93cbad2057ab1ba9f86b9d2c45"
   license "MIT"
