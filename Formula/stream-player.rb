@@ -1,9 +1,9 @@
 class StreamPlayer < Formula
   desc "Open-source M3U8/IPTV player with EPG support"
   homepage "https://github.com/Thinkelution/stream-player"
-  url "https://github.com/Thinkelution/stream-player/releases/download/v0.1.0/StreamPlayer-0.1.0.dmg"
+  url "https://github.com/Thinkelution/stream-player/releases/download/v0.1.0/StreamPlayer-0.1.0-arm64.dmg"
   version "0.1.0"
-  sha256 "REPLACE_WITH_ACTUAL_SHA256_AFTER_FIRST_BUILD"
+  sha256 "6b6971bf55d11e33e802eaeca8423756d196eb93cbad2057ab1ba9f86b9d2c45"
   license "MIT"
 
   depends_on arch: :arm64
@@ -19,11 +19,12 @@ class StreamPlayer < Formula
 
       Launch from Applications or use Spotlight search.
 
-      To load your IPTV stream:
-        1. Create ~/.streamplayer-config with:
-           REACT_APP_M3U_URL=your_m3u_url
-           REACT_APP_EPG_URL=your_epg_url
-        2. Restart StreamPlayer
+      To configure your IPTV source:
+        1. Set environment variables (optional):
+           export REACT_APP_M3U_URL="http://your-service.com/get.php?username=USER&password=PASS&type=m3u_plus&output=mpegts"
+           export REACT_APP_EPG_URL="http://your-service.com/xmltv.php?username=USER&password=PASS"
+        2. Launch StreamPlayer
+        3. Channels will load from the M3U playlist
 
       This is an open-source IPTV player. Ensure you have rights to access streams.
     EOS
