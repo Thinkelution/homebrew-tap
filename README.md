@@ -1,5 +1,27 @@
 # Thinkelution Homebrew tap
 
+## StreamPlayer — M3U8/IPTV with EPG
+
+```sh
+brew tap thinkelution/tap
+brew install stream-player
+```
+
+Open **StreamPlayer** from Applications. Configure your IPTV source:
+
+1. Set environment variables or create `~/.streamplayer-config`:
+   ```
+   REACT_APP_M3U_URL=http://your-service.com/get.php?username=USER&password=PASS&type=m3u_plus&output=mpegts
+   REACT_APP_EPG_URL=http://your-service.com/xmltv.php?username=USER&password=PASS
+   ```
+2. Restart StreamPlayer
+
+**Features:** HLS streaming, EPG guide, channel search & filtering, dark theme
+
+**License:** MIT
+
+---
+
 ## Rust Playout — Apple Silicon
 
 ```sh
