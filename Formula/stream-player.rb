@@ -4,7 +4,7 @@ class StreamPlayer < Formula
   url "https://github.com/Thinkelution/stream-player/releases/download/v0.1.0/StreamPlayer-0.1.0-arm64.dmg",
       verified: "github.com/Thinkelution/stream-player"
   version "0.1.0"
-  sha256 "6b6971bf55d11e33e802eaeca8423756d196eb93cbad2057ab1ba9f86b9d2c45"
+  sha256 "cc56b51e469a141b1f236505b790862b71d4d608ed329f4aeaa074e972a1f603"
   license "MIT"
 
   depends_on arch: :arm64
